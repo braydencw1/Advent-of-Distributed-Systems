@@ -1,0 +1,8 @@
+version: "3"
+services:
+  openjdk:
+    image: "maelstrom:latest"
+      #    command: '/app/maelstrom/maelstrom test -w "echo --bin /binary/maelstrom-echo --node-count 1 --time-limit 10"'
+      #    command: ["/app/maelstrom/maelstrom", "test", "-w", "echo", "--bin", "/binary/maelstrom-echo", "--node-count", "1", "--time-limit", "10"]
+    volumes:
+      - "./cmd:/cmd:z" 
