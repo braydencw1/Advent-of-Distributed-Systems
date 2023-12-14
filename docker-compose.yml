@@ -2,7 +2,6 @@ version: "3"
 services:
   openjdk:
     image: "maelstrom:latest"
-      #    command: '/app/maelstrom/maelstrom test -w "echo --bin /binary/maelstrom-echo --node-count 1 --time-limit 10"'
-      #    command: ["/app/maelstrom/maelstrom", "test", "-w", "echo", "--bin", "/binary/maelstrom-echo", "--node-count", "1", "--time-limit", "10"]
+    command: ["./maelstrom/maelstrom", "test", "-w", "unique-ids", "--bin", "/cmd/maelstrom-generate", "--node-count", "3", "--time-limit", "30", "--availability", "total", "--nemesis", "partition"]
     volumes:
       - "./cmd:/cmd:z" 
