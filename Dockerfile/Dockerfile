@@ -2,7 +2,7 @@ FROM openjdk:23-oraclelinux7
 
 
 RUN yum upgrade -y && \
-    yum install graphviz gnuplot wget bzip2 git glibc-doc -y
+    yum install graphviz gnuplot wget bzip2 git glibc -y
 WORKDIR /app
 
 
