@@ -2,6 +2,6 @@ version: "3"
 services:
   openjdk:
     image: "maelstrom:latest"
-    command: ["./maelstrom/maelstrom", "test", "-w", "unique-ids", "--bin", "/cmd/maelstrom-generator", "--node-count", "3", "--time-limit", "30", "--availability", "total", "--nemesis", "partition"]
+    command: ["./maelstrom/maelstrom", "test", "-w", "unique-ids", "--bin", "/cmd/maelstrom-generator", "--node-count", "3", "--time-limit", "7", "--availability", "total", "--nemesis", "partition"]
     volumes:
       - "./cmd:/cmd:z" 

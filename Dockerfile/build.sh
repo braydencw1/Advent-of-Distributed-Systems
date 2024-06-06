@@ -1,1 +1,1 @@
-docker build -t maelstrom .
+docker build -t maelstrom:1 .
